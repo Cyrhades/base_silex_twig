@@ -9,9 +9,15 @@
 // ->get correspond à un appel HTTP en method GET
 // ici “/” correspond à la page d’accueil (index.php) 
 // et donc à l’url
-// MyApp\controllers\Homepage correspond à 
+// SuperProjet\controllers\Homepage correspond à 
 // la classe (controller) visée
 // httpGetMethod est la méthode qui sera appelée
-$app->get('/', 'MyApp\controllers\Homepage::httpGetMethod')
+$app->get('/', 'SuperProjet\Controllers\Homepage::showPage')
 // bind permet de nommer cette route et vous permettra de générer l’url depuis ce nom
 ->bind('home');
+
+
+
+$app->get('/contact', 'SuperProjet\Controllers\Contact::showForm')
+->bind('contact');
+$app->post('/contact', 'SuperProjet\Controllers\Contact::submitForm'); 

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exemple Silex Twig</title>
+	</head>
+	<body>
+		<nav>
+			<a href="{{ url('home') }}">Page d'accueil</a>
+			<a href="{{ url('contact') }}">Nous contacter</a>
+		</nav>
+		{% block body %}{% endblock %}
+	</body>
+</html>
