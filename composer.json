@@ -1,0 +1,12 @@
+{
+    "require": {
+        "silex/silex": "^2.2",
+        "twig/twig": "^2.5"
+    },
+    "autoload" : {
+    	"psr-4" : {
+        	"SuperProjet\\" : "src/nom_projet"
+        }
+    }
+
+}
